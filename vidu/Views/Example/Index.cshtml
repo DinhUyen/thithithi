@@ -5,10 +5,31 @@
 <h1>@ViewBag.Message</h1>
 
 @{
-    int test = 1000;
+    var name = "John";
+    var age = 30;
 }
 
-<h1>test @test</h1>
+<h1>Welcome to our website</h1>
+<h3>Hi, my name is @name and I am @age years old.</h3>
+
+
+<br />
+
+@if (age > 18)
+{
+    <p>You are old enough to vote.</p>
+}
+else
+{
+<p> You are not old enough to vote..</p>
+   
+}
+
+<br />
+
+@(DateTime.Now.Year - age)
+
+
 <form method="post" action="/Example/Save">
     <input type="text" name="id" />
     <input type="text" name="name" />
