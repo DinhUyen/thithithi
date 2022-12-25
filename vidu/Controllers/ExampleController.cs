@@ -52,6 +52,10 @@ namespace vidu.Controllers
         {
             return View("Vidu3", bl);
         }
+        public ActionResult RenderAction()
+        {
+            return View();
+        }
 
     }
 }

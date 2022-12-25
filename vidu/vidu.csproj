@@ -190,6 +190,7 @@
     <Content Include="Views\Example\Index.cshtml" />
     <Content Include="Views\Example\RenameProduct.cshtml" />
     <Content Include="Views\Example\Vidu3.cshtml" />
+    <Content Include="Views\Example\RenderAction.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
