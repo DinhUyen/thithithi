@@ -25,6 +25,19 @@ namespace vidu.Controllers
 
             return RedirectToAction("Index");
         }
+
+        [HttpPost]
+        public ActionResult Save2()
+        {
+            //vidu context objects
+            int id = int.Parse(Request.Form["id2"]);
+            string name = Request.Form["name2"];
+            BLOG bl = new BLOG();
+            bl.ID = id;
+            bl.NAME = name;
+
+            return RedirectToAction("Index");
+        }
         [HttpGet]
         public ActionResult RenameProduct(int id , string name)
         {
@@ -34,7 +47,11 @@ namespace vidu.Controllers
             bl.NAME = name;
             return View(bl);
         }
-
+        [HttpPost]
+        public ActionResult Vidu3(BLOG bl)
+        {
+            return View("Vidu3", bl);
+        }
 
     }
 }
