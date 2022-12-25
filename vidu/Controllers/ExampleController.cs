@@ -21,10 +21,10 @@ namespace vidu.Controllers
         {
             // Lưu dữ liệu vào database
             //var  ob=db.BLOGs.
-            _db.BLOGs.Add(blog);
-            _db.SaveChanges();
+       /*     _db.BLOGs.Add(blog);
+            _db.SaveChanges();*/
 
-            return RedirectToAction("Index");
+            return RedirectToAction("Index","Home");
         }
 
         [HttpPost]
@@ -37,7 +37,7 @@ namespace vidu.Controllers
             bl.ID = id;
             bl.NAME = name;
 
-            return RedirectToAction("Index");
+            return Redirect("/Home/Index");
         }
         [HttpGet]
         public ActionResult RenameProduct(int id , string name)
