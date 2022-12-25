@@ -26,9 +26,11 @@ namespace vidu.Controllers
             return RedirectToAction("Index");
         }
         [HttpGet]
-        public ActionResult RenameProduct()
+        public ActionResult RenameProduct(string id , string name)
         {
-            
+            //https://localhost:44306/Example/RenameProduct?id=testID&name=testName
+            string maId = id;
+            string ten = name;
             return View();
         }
 
