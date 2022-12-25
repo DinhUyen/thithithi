@@ -4,6 +4,11 @@
 }
 <h1>@ViewBag.Message</h1>
 
+@{
+    int test = 1000;
+}
+
+<h1>test @test</h1>
 <form method="post" action="/Example/Save">
     <input type="text" name="id" />
     <input type="text" name="name" />
