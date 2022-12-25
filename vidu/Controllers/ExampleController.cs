@@ -32,6 +32,10 @@ namespace vidu.Controllers
             return View();
         }
 
-
+        [ChildActionOnly]
+        public ActionResult Bai14()
+        {
+            return PartialView("_Partial");
+        }
     }
 }

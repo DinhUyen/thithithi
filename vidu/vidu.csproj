@@ -189,6 +189,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Example\Index.cshtml" />
     <Content Include="Views\Example\RenameProduct.cshtml" />
+    <Content Include="Views\Home\_Partial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
