@@ -13,6 +13,7 @@ namespace vidu.Controllers
         Model1 _db = new Model1();
         public ActionResult Index()
         {
+            ViewBag.Message = "RenameProduct";
             return View();
         }
         [HttpPost]
